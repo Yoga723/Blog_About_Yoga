@@ -14,7 +14,7 @@ import Hoob from "../public/Hoob.png";
 import AboutImg from "../public/about me.png";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div
       className={`${darkMode === true ? `dark bg-[#111827]` : `bg-[#FBFAF5]`}`}
