@@ -15,12 +15,14 @@ import AboutImg from "../public/about me.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+
   return (
     <div
-      className={`${darkMode === true ? `dark bg-[#111827]` : `bg-[#FBFAF5]`}`}
+      className={`${darkMode === true ? `dark bg-[#111827] ` : `bg-[#FBFAF5]`}`}
     >
       <Head>
         <title>About Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
           content="a blog about a junior developer named Yoga Pangestu"
@@ -53,7 +55,7 @@ export default function Home() {
             className={`flex flex-col justify-center items-center py-[30px] pb-[70px] w-auto`}
           >
             <p
-              className={`text-[50px] md:text-[60px] text-gradient p-1 font-burtons`}
+              className={`text-[50px] md:text-[60px] text-gradient-light dark:text-gradient p-1 font-burtons`}
             >
               Yoga pangestu
             </p>
@@ -69,9 +71,15 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <Twitter />
-              <Whatsapp />
-              <Youtube />
+              <a href="https://twitter.com/yoga14741100">
+                <Twitter />
+              </a>
+              <a href="https://wa.me/082225035259">
+                <Whatsapp />
+              </a>
+              <a href="https://www.youtube.com/channel/UCWOK3GeMoudtCOjl_6wXbEg">
+                <Youtube />
+              </a>
             </div>
             <div className="relative mx-auto  bg-gradient-to-b from-cyan-500 to-teal-600 rounded-full w-80 h-80  overflow-hidden md:w-96 md:h-96">
               <Image
@@ -83,7 +91,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="-mt-[40px]">
+        <section className="-mt-[20px]">
           <div className="px-10">
             <h3 className="text-3xl py-1 text-gray-800 dark:text-white font-burtons">
               List of school and colleague
@@ -96,13 +104,15 @@ export default function Home() {
           <ul className="flex flex-col md:flex-row flex-wrap md:items-stretch md:justify-center items-center  list-none p-5">
             {EducationCardContent.map((res, index) => {
               return (
-                <div className="flex object-contain md:w-fit w-full items-center md:m-8" 
-                key={res.id}>
+                <div
+                  className="flex object-contain md:w-fit w-full items-center md:m-8"
+                  key={res.id}
+                >
                   {index % 2 === 0 ? (
                     <li
                       className="gap-10 lg:flex-row h-full w-full my-5 mb-1"
-                      data-aos="fade-up-right"
                       data-aos-offset="300"
+                      data-aos="fade-up-up"
                       data-aos-duration="1000"
                       data-aos-easing="ease-in-sine"
                     >
@@ -111,9 +121,9 @@ export default function Home() {
                     </li>
                   ) : (
                     <li
-                      className=" gap-10 lg:flex-row h-full w-full my-5 mb-1"
-                      data-aos="fade-up-left"
+                      className=" gap-10 lg:flex-row h-full w-full my-5 mb-1 "
                       data-aos-offset="300"
+                      data-aos="fade-down"
                       data-aos-duration="1000"
                       data-aos-easing="ease-in-sine"
                     >
@@ -127,36 +137,34 @@ export default function Home() {
           </ul>
         </section>
 
-        <section
-          className="px-5 py-3 w-full h-full"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
-          <p className="text-gray-800 dark:text-white font-burtons text-[32px]">
-            Portofolio
-          </p>
-          <p className="text-gray-800 dark:text-white font-roboto text-[16px] ">
-            Since i enter colleague and start learning how to code, i sometimes
-            create a small project such as making a form that can send data
-            through <span className="text-[#33bbcf]">API</span>, experimenting
-            with <span className="text-[#33bbcf]">inputs</span> and{" "}
-            <span className="text-[#33bbcf]">data types</span>, and showing data
-            from <span className="text-[#33bbcf]">API</span> in a table or a
-            lists.
-          </p>
-          <p className="text-gray-800 dark:text-white font-roboto text-[16px] ">
-            But so far projects that i could call finish and ready to deplop are
-            only 2 so far, which is this blog and my first reactJS project{" "}
-            <span className="text-gray-800 dark:text-white hover:text-[#d93d3d] ">
-              <a
-                href="https://firstreactlandingpage.000webhostapp.com/"
-                className="text-gray-800 dark:text-white"
-              >
-                HooBank Yoga
-              </a>
-              .
-            </span>
-          </p>
+        <section className="px-5 py-3 w-full h-full">
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <p className="text-gray-800 dark:text-white font-burtons text-[32px]">
+              Portofolio
+            </p>
+            <p className="text-gray-800 dark:text-white font-roboto text-[16px] ">
+              Since i enter colleague and start learning how to code, i
+              sometimes create a small project such as making a form that can
+              send data through <span className="text-[#33bbcf]">API</span>,
+              experimenting with <span className="text-[#33bbcf]">inputs</span>{" "}
+              and <span className="text-[#33bbcf]">data types</span>, and
+              showing data from <span className="text-[#33bbcf]">API</span> in a
+              table or a lists.
+            </p>
+            <p className="text-gray-800 dark:text-white font-roboto text-[16px] ">
+              But so far projects that i could call finish and ready to deplop
+              are only 2 so far, which is this blog and my first reactJS project{" "}
+              <span className="text-gray-800 dark:text-white hover:text-[#d93d3d] ">
+                <a
+                  href="https://firstreactlandingpage.000webhostapp.com/"
+                  className="text-gray-800 dark:text-white"
+                >
+                  HooBank Yoga
+                </a>
+                .
+              </span>
+            </p>
+          </div>
 
           <div className="basis-1/3 flex flex-col p-5 overflow-hidden rounded-lg">
             <p className="text-gray-800 dark:text-white text-[24px] py-4">
@@ -185,7 +193,10 @@ export default function Home() {
           <div className="basis-1/3 flex flex-col p-5 overflow-hidden rounded-lg">
             <p className="text-gray-800 dark:text-white text-[24px] py-4">
               <span className="hover:text-[#d93d3d]">
-                <a href="#" className="font-burtons">
+                <a
+                  href="https://ablog-about-yoga.herokuapp.com/"
+                  className="font-burtons"
+                >
                   2. About Me Blog
                 </a>
               </span>
