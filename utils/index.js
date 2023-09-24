@@ -1,4 +1,4 @@
-import SMA from "../public/SMA.png";
+import SMA from "../public/sma.png";
 import SDIT from "../public/SDIT.png";
 import UTY from "../public/20171101110615.png";
 import SMP from "../public/282297_232915143398307_7436191_n-removebg-preview.png"
