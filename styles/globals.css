@@ -8,12 +8,18 @@
   width: 100%;
   height: 100%;
 }
-
+.test{
+  border-top: 2px solid rgb(100 116 139);
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding-top: 10px;
+}
 .text-gradient-light{
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    rgb(37, 173, 155) 0.89%,
-    #5fc8cb 17.23%,
+    rgb(24, 112, 100) 0.89%,
+    #3c7e80 17.23%,
     #699a9c 42.04%,
     #336163 55.12%,
     rgb(114, 193, 182) 71.54%,
