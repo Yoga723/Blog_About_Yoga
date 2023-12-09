@@ -105,7 +105,7 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
-                <a href="https://twitter.com/yoga14741100">
+                <a href="https://twitter.com/yovapangestu16">
                   <Twitter />
                 </a>
                 <a href="https://wa.me/082225035259">
