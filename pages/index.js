@@ -128,14 +128,14 @@ export default function Home() {
           <section className="-mt-[20px]">
             <div className="px-10">
               <h3 className="text-3xl py-1 text-gray-800 dark:text-white font-burtons">
-                List of school and colleague
+                Education List
               </h3>
               <p className="text-gray-800 dark:text-white py-3 font-roboto">
                 Here are the list of places that i attend to get education from
                 school to university :
               </p>
             </div>
-            <ul className="flex flex-col md:flex-row flex-wrap md:items-stretch md:justify-center items-center  list-none p-5">
+            <ul className="flex flex-col md:flex-row flex-wrap md:items-stretch md:justify-center items-center  list-none p-3">
               {EducationCardContent.map((res, index) => {
                 return (
                   <div

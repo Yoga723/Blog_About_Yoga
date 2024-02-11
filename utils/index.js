@@ -1,6 +1,5 @@
 import SMA from "../public/sma.png";
-import SDIT from "../public/SDIT.png";
-import UTY from "../public/20171101110615.png";
+import UTY from "../public/UYT Logo fit border.png";
 import SMP from "../public/282297_232915143398307_7436191_n-removebg-preview.png"
 
 
@@ -27,25 +26,19 @@ export const styles = {
 
 export const EducationCardContent = [
     {
-        id: 1,
-        Title: "SDIT Persis Tarogong Kidul",
-        picture: SDIT,
-        content: "SDIT Persis Tarogong Kidul is my primary school, i spent 6 years in this school getting basic education like reading, writing, counting, and how to operate computer",
-    },
-    {
-      id: 2,
+      id: 0,
         Title: "SMPN 1 Garut",
         picture: SMP,
         content: "i spent 3 years in middle school to broaden my knowledge. this is where i started to learn more about math, biology, and technology",
     },
     {
-      id: 3,
+      id: 1,
         Title: "SMAN 15 Garut",
         picture: SMA,
         content: "i spent another 3 years in high school to learn even more in order to advance my knowledge. The school sometimes gave too much homework where i got overwhelmed many times, but thankfull i have quite lots of friends where we usually help each other out. Here is where i started to get interested in making a website",
     },
     {
-      id: 4,
+      id: 2,
         Title: "Universitas Teknologi Yogyakarta",
         picture: UTY,
         content: "This is where i'm currently studying after graduate from high school, here they teach how to develop not just a website but also how to make a mobile app, Artificial Reality, and how to process big data(although i very bad at this one) ",
