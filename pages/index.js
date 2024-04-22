@@ -5,7 +5,7 @@ import Router from "next/router";
 import Image from "next/image";
 import Avatar from "../public/foto data diri2.png";
 import {
-  FaTwitterSquare as Twitter,
+  FaLinkedin as LinkedId,
   FaYoutube as Youtube,
   FaWhatsappSquare as Whatsapp,
 } from "react-icons/fa";
@@ -105,13 +105,22 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
-                <a href="https://twitter.com/yovapangestu16">
-                  <Twitter />
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/yoga-pangestu-395b682b3/"
+                >
+                  <LinkedId />
                 </a>
-                <a href="https://wa.me/082225035259">
+                <a
+                  target="_blank"
+                  href="https://wa.me/082225035259"
+                >
                   <Whatsapp />
                 </a>
-                <a href="https://www.youtube.com/channel/UCWOK3GeMoudtCOjl_6wXbEg">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCWOK3GeMoudtCOjl_6wXbEg"
+                >
                   <Youtube />
                 </a>
               </div>
