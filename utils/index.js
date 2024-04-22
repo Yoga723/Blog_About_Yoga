@@ -26,12 +26,6 @@ export const styles = {
 
 export const EducationCardContent = [
     {
-      id: 0,
-        Title: "SMPN 1 Garut",
-        picture: SMP,
-        content: "i spent 3 years in middle school to broaden my knowledge. this is where i started to learn more about math, biology, and technology",
-    },
-    {
       id: 1,
         Title: "SMAN 15 Garut",
         picture: SMA,
