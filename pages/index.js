@@ -108,21 +108,21 @@ export default function Home() {
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/yoga-pangestu-395b682b3/"
-                    rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <LinkedId />
                 </a>
                 <a
                   target="_blank"
                   href="https://wa.me/082225035259"
-                    rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <Whatsapp />
                 </a>
                 <a
                   target="_blank"
                   href="https://www.youtube.com/channel/UCWOK3GeMoudtCOjl_6wXbEg"
-                    rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <Youtube />
                 </a>
