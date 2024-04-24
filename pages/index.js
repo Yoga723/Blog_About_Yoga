@@ -5,7 +5,7 @@ import Router from "next/router";
 import Image from "next/image";
 import Avatar from "../public/foto data diri2.png";
 import {
-  FaTwitterSquare as Twitter,
+  FaLinkedin as LinkedId,
   FaYoutube as Youtube,
   FaWhatsappSquare as Whatsapp,
 } from "react-icons/fa";
@@ -13,6 +13,8 @@ import { EducationCard, Footer } from "../components";
 import { EducationCardContent } from "../utils/index";
 import Hoob from "../public/Hoob.png";
 import AboutImg from "../public/about me.png";
+import newAboutImg from "../public/new about me.png";
+import threadClone from "../public/threadClone.png";
 
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState({
@@ -105,13 +107,25 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
-                <a href="https://twitter.com/yovapangestu16">
-                  <Twitter />
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/yoga-pangestu-395b682b3/"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedId />
                 </a>
-                <a href="https://wa.me/082225035259">
+                <a
+                  target="_blank"
+                  href="https://wa.me/082225035259"
+                  rel="noopener noreferrer"
+                >
                   <Whatsapp />
                 </a>
-                <a href="https://www.youtube.com/channel/UCWOK3GeMoudtCOjl_6wXbEg">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCWOK3GeMoudtCOjl_6wXbEg"
+                  rel="noopener noreferrer"
+                >
                   <Youtube />
                 </a>
               </div>
@@ -195,7 +209,7 @@ export default function Home() {
                 data from <span className="text-[#33bbcf]">API</span> in a table
                 or a lists.
               </p>
-              <p className="text-gray-800 dark:text-white font-roboto text-[16px] ">
+              {/* <p className="text-gray-800 dark:text-white font-roboto text-[16px] ">
                 But so far projects that i could call finish and ready to deplop
                 are only 2 so far, which is this blog and my first reactJS
                 project{" "}
@@ -208,7 +222,55 @@ export default function Home() {
                   </a>
                   .
                 </span>
+              </p> */}
+            </div>
+
+            <div className="basis-1/3 flex flex-col p-5 overflow-hidden rounded-lg">
+              <p className="text-gray-800 dark:text-white text-[24px] py-4">
+                <span className="hover:text-[#d93d3d]">
+                  <a
+                    href="https://blog-yoga-v-2-q1ypqgl1u-yoga723s-projects.vercel.app/"
+                    className="font-burtons" target="_blank"
+                  >
+                    1. Yoga new Portofolio (on development)
+                  </a>
+                </span>
               </p>
+              <div className="justify-center w-full flex rounded-lg drop-shadow-3xl hover:shadow-red-400 hover:shadow-3xl">
+                <a href="https://blog-yoga-v-2-q1ypqgl1u-yoga723s-projects.vercel.app/" target="_blank">
+                  <Image
+                    src={newAboutImg}
+                    className="rounded-lg object-cover"
+                    width={1500}
+                    height={500}
+                    alt="newAboutMe"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="basis-1/3 flex flex-col p-5 overflow-hidden rounded-lg">
+              <p className="text-gray-800 dark:text-white text-[24px] py-4">
+                <span className="hover:text-[#d93d3d]">
+                  <a
+                    href="https://thread-clone-self.vercel.app/"
+                    className="font-burtons" target="_blank"
+                  >
+                    2. Thread Clone
+                  </a>
+                </span>
+              </p>
+              <div className="justify-center w-full flex rounded-lg drop-shadow-3xl hover:shadow-red-400 hover:shadow-3xl">
+                <a href="https://thread-clone-self.vercel.app/" target="_blank">
+                  <Image
+                    src={threadClone}
+                    className="rounded-lg object-cover"
+                    width={1500}
+                    height={500}
+                    alt="newAboutMe"
+                  />
+                </a>
+              </div>
             </div>
 
             <div className="basis-1/3 flex flex-col p-5 overflow-hidden rounded-lg">
@@ -218,7 +280,7 @@ export default function Home() {
                     href="https://firstreactlandingpage.000webhostapp.com/"
                     className="font-burtons"
                   >
-                    1. HooBank Yoga
+                    3. HooBank Yoga
                   </a>
                 </span>
               </p>
@@ -242,7 +304,7 @@ export default function Home() {
                     href="https://ablog-about-yoga.herokuapp.com/"
                     className="font-burtons"
                   >
-                    2. About Me Blog
+                    4. About Me Blog
                   </a>
                 </span>
               </p>
