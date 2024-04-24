@@ -1,6 +1,5 @@
 import SMA from "../public/sma.png";
 import UTY from "../public/UYT Logo fit border.png";
-import SMP from "../public/282297_232915143398307_7436191_n-removebg-preview.png";
 
 export const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
