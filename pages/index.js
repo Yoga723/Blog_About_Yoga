@@ -230,14 +230,19 @@ export default function Home() {
                 <span className="hover:text-[#d93d3d]">
                   <a
                     href="https://blog-yoga-v-2-q1ypqgl1u-yoga723s-projects.vercel.app/"
-                    className="font-burtons" target="_blank"
+                    className="font-burtons"
+                    target="_blank"
                   >
                     1. Yoga new Portofolio (on development)
                   </a>
                 </span>
               </p>
               <div className="justify-center w-full flex rounded-lg drop-shadow-3xl hover:shadow-red-400 hover:shadow-3xl">
-                <a href="https://blog-yoga-v-2-q1ypqgl1u-yoga723s-projects.vercel.app/" target="_blank">
+                <a
+                  href="https://blog-yoga-v-2-q1ypqgl1u-yoga723s-projects.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src={newAboutImg}
                     className="rounded-lg object-cover"
@@ -254,14 +259,20 @@ export default function Home() {
                 <span className="hover:text-[#d93d3d]">
                   <a
                     href="https://thread-clone-self.vercel.app/"
-                    className="font-burtons" target="_blank"
+                    className="font-burtons"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     2. Thread Clone
                   </a>
                 </span>
               </p>
               <div className="justify-center w-full flex rounded-lg drop-shadow-3xl hover:shadow-red-400 hover:shadow-3xl">
-                <a href="https://thread-clone-self.vercel.app/" target="_blank">
+                <a
+                  href="https://thread-clone-self.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src={threadClone}
                     className="rounded-lg object-cover"
@@ -279,13 +290,17 @@ export default function Home() {
                   <a
                     href="https://firstreactlandingpage.000webhostapp.com/"
                     className="font-burtons"
+                    rel="noopener noreferrer"
                   >
                     3. HooBank Yoga
                   </a>
                 </span>
               </p>
               <div className="justify-center w-full flex rounded-lg drop-shadow-3xl hover:shadow-red-400 hover:shadow-3xl">
-                <a href="https://firstreactlandingpage.000webhostapp.com/">
+                <a
+                  href="https://firstreactlandingpage.000webhostapp.com/"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src={Hoob}
                     className="rounded-lg object-cover"
@@ -303,6 +318,7 @@ export default function Home() {
                   <a
                     href="https://ablog-about-yoga.herokuapp.com/"
                     className="font-burtons"
+                    rel="noopener noreferrer"
                   >
                     4. About Me Blog
                   </a>
