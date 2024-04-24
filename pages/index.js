@@ -232,6 +232,7 @@ export default function Home() {
                     href="https://blog-yoga-v-2-q1ypqgl1u-yoga723s-projects.vercel.app/"
                     className="font-burtons"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     1. Yoga new Portofolio (on development)
                   </a>
