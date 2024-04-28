@@ -229,7 +229,7 @@ export default function Home() {
               <p className="text-gray-800 dark:text-white text-[24px] py-4">
                 <span className="hover:text-[#d93d3d]">
                   <a
-                    href="https://blog-yoga-v-2-q1ypqgl1u-yoga723s-projects.vercel.app/"
+                    href="https://blog-yoga-v-2.vercel.app/"
                     className="font-burtons"
                     target="_blank"
                     rel="noopener noreferrer"
